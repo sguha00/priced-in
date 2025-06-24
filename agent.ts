@@ -250,7 +250,7 @@ const loadThread = async (): Promise<AgentInputItem[]> => {
   try {
     if (existsSync("thread.json")) {
       const threadData = await readFile("thread.json", "utf-8");
-      return JSON.parse(threadData).slice(-100);
+      return JSON.parse(threadData).slice(-1000);
     }
   } catch (error) {
     log(`⚠️ Failed to load thread history: ${error}`);
