@@ -32,6 +32,10 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 
 <!-- auto end -->
 
+- [🧠 Logs](./agent.log)
+- [🧑‍💻 System prompt](./system-prompt.md)
+- [📁 Source code](./agent.ts)
+
 ## 🛠️ Installation
 
 1. Clone the repository:
@@ -53,35 +57,7 @@ npm install
 export OPENAI_API_KEY="your-api-key-here"
 ```
 
-## 🏃‍♂️ Running the Agent
-
-### Local Execution
-
-Run the trading agent manually:
-
-```bash
-npm start
-```
-
-This will execute one trading session where the agent will:
-
-1. Check the current portfolio
-2. Analyze market conditions
-3. Make trading decisions
-4. Update the portfolio
-
-### Automated Execution (GitHub Actions)
-
-The agent is configured to run automatically every hour via GitHub Actions. To enable this:
-
-1. Fork this repository
-2. Go to Settings → Secrets and variables → Actions
-3. Add a new repository secret named `OPENAI_API_KEY` with your OpenAI API key
-4. The agent will now run automatically every hour
-
-You can also trigger a manual run from the Actions tab in your GitHub repository.
-
-## 📊 Portfolio Structure
+## 🏃‍♂️ Running the agent
 
 The agent's portfolio is stored in `portfolio.json`:
 
@@ -108,6 +84,32 @@ The agent's portfolio is stored in `portfolio.json`:
 - **cash**: Available cash balance for trading
 - **holdings**: Current stock positions (ticker: number of shares)
 - **history**: Complete record of all trades
+
+### Local execution
+
+Run the trading agent manually:
+
+```bash
+npm start
+```
+
+This will execute one trading session where the agent will:
+
+1. Check the current portfolio
+2. Analyze market conditions
+3. Make trading decisions
+4. Update the portfolio
+
+### Automated execution via GitHub Actions
+
+The agent is configured to run automatically every hour via GitHub Actions. To enable this:
+
+1. Fork this repository
+2. Go to Settings → Secrets and variables → Actions
+3. Add a new repository secret named `OPENAI_API_KEY` with your OpenAI API key
+4. The agent will now run automatically every hour
+
+You can also trigger a manual run from the Actions tab in your GitHub repository.
 
 ## ⚠️ Disclaimer
 
