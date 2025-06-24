@@ -76,6 +76,27 @@ ${portfolio.history
   },
 });
 
+const getNetWorthTool = tool({
+  name: "get_net_worth",
+  description: "Get your current net worth (total portfolio value)",
+  parameters: z.object({}),
+  async execute() {
+    const netWorth = await calculateNetWorth();
+    const portfolio = await getPortfolio();
+    const returnPercentage = (((netWorth - 1000) / 1000) * 100).toFixed(2);
+
+    log(`💰 Current net worth: $${netWorth} (${returnPercentage}% return)`);
+
+    return `Your current net worth is $${netWorth}
+- Cash: $${portfolio.cash}
+- Holdings value: $${(netWorth - portfolio.cash).toFixed(2)}
+- Total return: ${returnPercentage}% (started with $1,000)
+- ${netWorth >= 1000 ? "📈 Up" : "📉 Down"} $${Math.abs(
+      netWorth - 1000
+    ).toFixed(2)} from initial investment`;
+  },
+});
+
 const buyTool = tool({
   name: "buy",
   description: "Buy a given stock at the current market price",
@@ -178,9 +199,129 @@ const thinkTool = tool({
   },
 });
 
+const calculateNetWorth = async (): Promise<number> => {
+  const portfolio = await getPortfolio();
+  let totalHoldingsValue = 0;
+
+  // Calculate the current market value of all holdings
+  for (const [ticker, shares] of Object.entries(portfolio.holdings)) {
+    if (shares > 0) {
+      try {
+        const price = await getStockPrice(ticker);
+        totalHoldingsValue += shares * price;
+      } catch (error) {
+        log(`⚠️ Failed to get price for ${ticker}: ${error}`);
+      }
+    }
+  }
+
+  // Net worth = cash + total holdings value
+  const netWorth =
+    Math.round((portfolio.cash + totalHoldingsValue) * 100) / 100;
+  return netWorth;
+};
+
+const calculatePortfolioValue = async (): Promise<{
+  totalValue: number;
+  holdings: Record<string, { shares: number; value: number }>;
+}> => {
+  const portfolio = await getPortfolio();
+  const holdingsWithValues: Record<string, { shares: number; value: number }> =
+    {};
+  let totalHoldingsValue = 0;
+
+  for (const [ticker, shares] of Object.entries(portfolio.holdings)) {
+    if (shares > 0) {
+      try {
+        const price = await getStockPrice(ticker);
+        const value = Math.round(shares * price * 100) / 100;
+        holdingsWithValues[ticker] = { shares, value };
+        totalHoldingsValue += value;
+      } catch (error) {
+        log(`⚠️ Failed to get price for ${ticker}: ${error}`);
+        holdingsWithValues[ticker] = { shares, value: 0 };
+      }
+    }
+  }
+
+  const totalValue =
+    Math.round((portfolio.cash + totalHoldingsValue) * 100) / 100;
+  return { totalValue, holdings: holdingsWithValues };
+};
+
+const updateReadme = async () => {
+  try {
+    const portfolio = await getPortfolio();
+    const { totalValue, holdings } = await calculatePortfolioValue();
+
+    // Read current README
+    const readmeContent = await readFile("README.md", "utf-8");
+
+    // Generate portfolio details
+    const recentTrades = portfolio.history.slice(-5).reverse(); // Last 5 trades, newest first
+
+    const portfolioSection = `<!-- auto start -->
+
+## 💰 Current Portfolio
+
+**Total Value: $${totalValue.toFixed(2)}** (Started with $1,000)
+
+### 📊 Current Holdings
+
+| Asset | Shares | Value |
+|-------|--------|-------|
+| Cash | - | $${portfolio.cash.toFixed(2)} |
+${Object.entries(holdings)
+  .map(
+    ([ticker, data]) =>
+      `| ${ticker} | ${data.shares} | $${data.value.toFixed(2)} |`
+  )
+  .join("\n")}
+
+### 📈 Recent Trades
+
+${
+  recentTrades.length > 0
+    ? recentTrades
+        .map(
+          (trade) =>
+            `- **${new Date(
+              trade.date
+            ).toLocaleDateString()}**: ${trade.type.toUpperCase()} ${
+              trade.shares
+            } ${trade.ticker} @ $${trade.price}/share ($${trade.total.toFixed(
+              2
+            )})`
+        )
+        .join("\n")
+    : "- No trades yet"
+}
+
+### 🎯 Performance
+
+- **Return**: ${(((totalValue - 1000) / 1000) * 100).toFixed(2)}%
+- **Last Updated**: ${new Date().toLocaleString("en-US", {
+      timeZone: "UTC",
+    })} UTC
+
+<!-- auto end -->`;
+
+    // Replace content between markers
+    const updatedReadme = readmeContent.replace(
+      /<!-- auto start -->[\s\S]*<!-- auto end -->/,
+      portfolioSection
+    );
+
+    await writeFile("README.md", updatedReadme);
+    log(`📝 Updated README with portfolio value: $${totalValue}`);
+  } catch (error) {
+    log(`❌ Failed to update README: ${error}`);
+  }
+};
+
 const agent = new Agent({
   name: "Assistant",
-  instructions: `You are an autonomous AI stock trading agent that executes trades every hour with the goal of multiplying an initial investment of $1,000.
+  instructions: `You are an autonomous AI stock trading agent that executes trades every 6 hours with the goal of multiplying an initial investment of $1,000.
 
 CRITICAL REQUIREMENT - MANDATORY THINKING PROCESS:
 - You MUST use the "think" tool before calling ANY other tool
@@ -190,7 +331,7 @@ CRITICAL REQUIREMENT - MANDATORY THINKING PROCESS:
 - Format your thoughts as an array of logical steps
 
 EXECUTION SCHEDULE:
-- You run automatically once every hour
+- You run automatically four times a day
 - Each run is an opportunity to analyze markets and make trading decisions
 - You started with $1,000 in cash
 - Your primary objective is to multiply this initial capital through strategic trading
@@ -202,13 +343,14 @@ AVAILABLE TOOLS:
    - Cash balance available for trading
    - Current stock holdings
    - Complete trade history
-3. get_stock_price: Get the current price of a given stock ticker
-4. buy: Purchase stocks using available cash balance
-5. sell: Sell stocks from your holdings to generate cash
-6. web_search: Research market conditions, stock prices, news, and analysis
+3. get_net_worth: Quick check of your total portfolio value and return percentage
+4. get_stock_price: Get the current price of a given stock ticker
+5. buy: Purchase stocks using available cash balance
+6. sell: Sell stocks from your holdings to generate cash
+7. web_search: Research market conditions, stock prices, news, and analysis
 
 TRADING STRATEGY:
-- Start each hourly run by thinking about your approach, then checking your portfolio
+- Start each run by thinking about your approach, then checking your portfolio
 - Use web search to identify market opportunities and check current stock prices
 - Look for stocks with strong momentum, positive news, or technical breakouts
 - Consider both day trading opportunities and longer-term growth stocks
@@ -245,6 +387,7 @@ Remember: You have full autonomy to make trading decisions. Focus on growing the
     sellTool,
     getStockPriceTool,
     getPortfolioTool,
+    getNetWorthTool,
   ],
 });
 
@@ -257,3 +400,5 @@ const result = await run(
   { maxTurns: 100 }
 );
 log(`🎉 Agent finished: ${result.finalOutput}`);
+
+await updateReadme();

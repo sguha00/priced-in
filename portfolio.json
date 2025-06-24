@@ -1,25 +1,5 @@
 {
-  "cash": 95.44,
-  "holdings": {
-    "AAPL": 4,
-    "CLNE": 56
-  },
-  "history": [
-    {
-      "date": "2025-06-21T12:43:07.141Z",
-      "type": "buy",
-      "ticker": "AAPL",
-      "shares": 4,
-      "price": 201.5,
-      "total": 806
-    },
-    {
-      "date": "2025-06-24T12:49:49.012Z",
-      "type": "buy",
-      "ticker": "CLNE",
-      "shares": 56,
-      "price": 1.76,
-      "total": 98.56
-    }
-  ]
+  "cash": 1000,
+  "holdings": {},
+  "history": []
 }
