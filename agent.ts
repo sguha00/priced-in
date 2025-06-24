@@ -1,4 +1,5 @@
-import { Agent, run, tool } from "@openai/agents";
+import { Agent, AgentInputItem, run, tool } from "@openai/agents";
+import { existsSync } from "fs";
 import { appendFile, readFile, writeFile } from "node:fs/promises";
 import OpenAI from "openai";
 import { zodTextFormat } from "openai/helpers/zod";
@@ -202,9 +203,7 @@ const thinkTool = tool({
 const calculateNetWorth = async (): Promise<number> => {
   const portfolio = await getPortfolio();
   let totalHoldingsValue = 0;
-
-  // Calculate the current market value of all holdings
-  for (const [ticker, shares] of Object.entries(portfolio.holdings)) {
+  for (const [ticker, shares] of Object.entries(portfolio.holdings))
     if (shares > 0) {
       try {
         const price = await getStockPrice(ticker);
@@ -213,9 +212,7 @@ const calculateNetWorth = async (): Promise<number> => {
         log(`⚠️ Failed to get price for ${ticker}: ${error}`);
       }
     }
-  }
 
-  // Net worth = cash + total holdings value
   const netWorth =
     Math.round((portfolio.cash + totalHoldingsValue) * 100) / 100;
   return netWorth;
@@ -249,17 +246,33 @@ const calculatePortfolioValue = async (): Promise<{
   return { totalValue, holdings: holdingsWithValues };
 };
 
+const loadThread = async (): Promise<AgentInputItem[]> => {
+  try {
+    if (existsSync("thread.json")) {
+      const threadData = await readFile("thread.json", "utf-8");
+      return JSON.parse(threadData).slice(-100);
+    }
+  } catch (error) {
+    log(`⚠️ Failed to load thread history: ${error}`);
+  }
+  return [];
+};
+
+const saveThread = async (thread: AgentInputItem[]) => {
+  try {
+    await writeFile("thread.json", JSON.stringify(thread, null, 2));
+    log(`💾 Saved thread history (${thread.length} items)`);
+  } catch (error) {
+    log(`❌ Failed to save thread history: ${error}`);
+  }
+};
+
 const updateReadme = async () => {
   try {
     const portfolio = await getPortfolio();
     const { totalValue, holdings } = await calculatePortfolioValue();
-
-    // Read current README
     const readmeContent = await readFile("README.md", "utf-8");
-
-    // Generate portfolio details
-    const recentTrades = portfolio.history.slice(-5).reverse(); // Last 5 trades, newest first
-
+    const recentTrades = portfolio.history.slice(-5).reverse();
     const portfolioSection = `<!-- auto start -->
 
 ## 💰 Current Portfolio
@@ -306,7 +319,6 @@ ${
 
 <!-- auto end -->`;
 
-    // Replace content between markers
     const updatedReadme = readmeContent.replace(
       /<!-- auto start -->[\s\S]*<!-- auto end -->/,
       portfolioSection
@@ -392,13 +404,19 @@ Remember: You have full autonomy to make trading decisions. Focus on growing the
 });
 
 log("Starting agent");
+
+const thread = await loadThread();
 const result = await run(
   agent,
-  `It's ${new Date().toLocaleString(
-    "en-US"
-  )}. Time for your hourly trading analysis! Review your portfolio, scan the markets for opportunities, and make strategic trades to grow your initial $1,000 investment. Good luck! 📈`,
+  thread.concat({
+    role: "user",
+    content: `It's ${new Date().toLocaleString(
+      "en-US"
+    )}. Time for your trading analysis! Review your portfolio, scan the markets for opportunities, and make strategic trades to grow your initial $1,000 investment. Good luck! 📈`,
+  }),
   { maxTurns: 100 }
 );
 log(`🎉 Agent finished: ${result.finalOutput}`);
 
+await saveThread(result.history);
 await updateReadme();
