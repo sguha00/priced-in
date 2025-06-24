@@ -1,6 +1,6 @@
-# 🤖 Priced In - Autonomous AI Trading Agent
+# 🤖 Priced In
 
-An autonomous AI-powered stock trading agent that executes trades every hour with the goal of multiplying an initial investment of $1,000. Built with OpenAI's Agents framework and runs automatically via GitHub Actions.
+An autonomous AI-powered stock trading agent that executes trades on GitHub Actions, built with OpenAI's Agents framework.
 
 <!-- auto start -->
 
@@ -31,22 +31,6 @@ An autonomous AI-powered stock trading agent that executes trades every hour wit
 - **Last Updated**: 6/24/2025, 1:22:06 PM UTC
 
 <!-- auto end -->
-
-## 🚀 Features
-
-- **Autonomous Trading**: Runs automatically every hour via GitHub Actions
-- **AI-Powered Decisions**: Uses OpenAI GPT-4.1 for market analysis and trading decisions
-- **Real-Time Market Data**: Fetches current stock prices and market information via web search
-- **Portfolio Management**: Tracks cash balance, stock holdings, and complete trade history
-- **Risk Management**: Built-in strategies to balance growth and risk
-- **Transparent Decision Making**: Uses a "think" tool to document reasoning before each action
-- **Automated Logging**: Maintains detailed logs of all activities and decisions
-
-## 📋 Prerequisites
-
-- Node.js 20 or higher
-- OpenAI API key with access to GPT-4.1
-- GitHub account (for automated execution)
 
 ## 🛠️ Installation
 
@@ -128,3 +112,7 @@ The agent's portfolio is stored in `portfolio.json`:
 ## ⚠️ Disclaimer
 
 This is an experimental AI trading agent for educational purposes. Real trading involves significant risk. Never invest money you cannot afford to lose.
+
+## 📄 License
+
+[MIT](./LICENSE) © [Anand Chowdhary](https://anandchowdhary.com)
