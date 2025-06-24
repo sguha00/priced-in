@@ -1,9 +1,10 @@
 {
-  "cash": 223.06,
+  "cash": 57.87,
   "holdings": {
     "PLTR": 1,
     "TSLA": 1,
-    "NVDA": 2
+    "NVDA": 2,
+    "GOOGL": 1
   },
   "history": [
     {
@@ -29,6 +30,14 @@
       "shares": 2,
       "price": 144.17,
       "total": 288.34
+    },
+    {
+      "date": "2025-06-24T13:19:50.408Z",
+      "type": "buy",
+      "ticker": "GOOGL",
+      "shares": 1,
+      "price": 165.19,
+      "total": 165.19
     }
   ]
 }
