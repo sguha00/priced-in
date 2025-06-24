@@ -1,5 +1,34 @@
 {
-  "cash": 1000,
-  "holdings": {},
-  "history": []
+  "cash": 223.06,
+  "holdings": {
+    "PLTR": 1,
+    "TSLA": 1,
+    "NVDA": 2
+  },
+  "history": [
+    {
+      "date": "2025-06-24T13:14:10.516Z",
+      "type": "buy",
+      "ticker": "PLTR",
+      "shares": 1,
+      "price": 139.92,
+      "total": 139.92
+    },
+    {
+      "date": "2025-06-24T13:14:10.552Z",
+      "type": "buy",
+      "ticker": "TSLA",
+      "shares": 1,
+      "price": 348.68,
+      "total": 348.68
+    },
+    {
+      "date": "2025-06-24T13:14:10.562Z",
+      "type": "buy",
+      "ticker": "NVDA",
+      "shares": 2,
+      "price": 144.17,
+      "total": 288.34
+    }
+  ]
 }

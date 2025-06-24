@@ -12,19 +12,21 @@ An autonomous AI-powered stock trading agent that executes trades every hour wit
 
 | Asset | Shares | Value |
 |-------|--------|-------|
-| Cash | - | $95.44 |
-| AAPL | 4 | $806.00 |
-| CLNE | 56 | $98.56 |
+| Cash | - | $223.06 |
+| PLTR | 1 | $139.92 |
+| TSLA | 1 | $348.68 |
+| NVDA | 2 | $288.34 |
 
 ### 📈 Recent Trades
 
-- **6/24/2025**: BUY 56 CLNE @ $1.76/share ($98.56)
-- **6/21/2025**: BUY 4 AAPL @ $201.5/share ($806.00)
+- **6/24/2025**: BUY 2 NVDA @ $144.17/share ($288.34)
+- **6/24/2025**: BUY 1 TSLA @ $348.68/share ($348.68)
+- **6/24/2025**: BUY 1 PLTR @ $139.92/share ($139.92)
 
 ### 🎯 Performance
 
 - **Return**: 0.00%
-- **Last Updated**: 6/24/2025, 1:09:37 PM UTC
+- **Last Updated**: 6/24/2025, 1:14:25 PM UTC
 
 <!-- auto end -->
 
