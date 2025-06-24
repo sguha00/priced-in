@@ -4,31 +4,27 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 
 <!-- auto start -->
 
-## 💰 Current Portfolio
+## 💰 Portfolio value: $1,004.97** (0.50% return)
 
-**Total Value: $1000.00** (Started with $1,000)
-
-### 📊 Current Holdings
+### 📊 Holdings
 
 | Asset | Shares | Value |
 |-------|--------|-------|
-| Cash | - | $57.87 |
-| PLTR | 1 | $139.92 |
-| TSLA | 1 | $348.68 |
-| NVDA | 2 | $288.34 |
-| GOOGL | 1 | $165.19 |
+| Cash | - | $12.29 |
+| PLTR | 1 | $142.38 |
+| TSLA | 1 | $342.29 |
+| NVDA | 1 | $147.55 |
+| GOOGL | 1 | $167.33 |
+| RIVN | 14 | $193.13 |
 
-### 📈 Recent Trades
+### 📈 Recent trades
 
-- **6/24/2025**: BUY 1 GOOGL @ $165.19/share ($165.19)
-- **6/24/2025**: BUY 2 NVDA @ $144.17/share ($288.34)
-- **6/24/2025**: BUY 1 TSLA @ $348.68/share ($348.68)
-- **6/24/2025**: BUY 1 PLTR @ $139.92/share ($139.92)
-
-### 🎯 Performance
-
-- **Return**: 0.00%
-- **Last Updated**: 6/24/2025, 1:22:06 PM UTC
+- **6/24/2025, 6:06:07 PM**: BUY 14 RIVN @ $13.795/share ($193.13)
+- **6/24/2025, 6:05:59 PM**: SELL 1 NVDA @ $147.55/share ($147.55)
+- **6/24/2025, 1:19:50 PM**: BUY 1 GOOGL @ $165.19/share ($165.19)
+- **6/24/2025, 1:14:10 PM**: BUY 2 NVDA @ $144.17/share ($288.34)
+- **6/24/2025, 1:14:10 PM**: BUY 1 TSLA @ $348.68/share ($348.68)
+- **6/24/2025, 1:14:10 PM**: BUY 1 PLTR @ $139.92/share ($139.92)
 
 <!-- auto end -->
 

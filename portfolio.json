@@ -1,10 +1,11 @@
 {
-  "cash": 57.87,
+  "cash": 12.29,
   "holdings": {
     "PLTR": 1,
     "TSLA": 1,
-    "NVDA": 2,
-    "GOOGL": 1
+    "NVDA": 1,
+    "GOOGL": 1,
+    "RIVN": 14
   },
   "history": [
     {
@@ -38,6 +39,22 @@
       "shares": 1,
       "price": 165.19,
       "total": 165.19
+    },
+    {
+      "date": "2025-06-24T18:05:59.852Z",
+      "type": "sell",
+      "ticker": "NVDA",
+      "shares": 1,
+      "price": 147.55,
+      "total": 147.55
+    },
+    {
+      "date": "2025-06-24T18:06:07.560Z",
+      "type": "buy",
+      "ticker": "RIVN",
+      "shares": 14,
+      "price": 13.795,
+      "total": 193.13
     }
   ]
 }
