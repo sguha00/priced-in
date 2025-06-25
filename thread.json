@@ -584,5 +584,397 @@
     ],
     "status": "completed",
     "providerData": {}
+  },
+  {
+    "role": "user",
+    "content": "It's 6/25/2025, 12:16:39 AM. Time for your trading analysis! Review your portfolio, scan the markets for opportunities, and make strategic trades to grow your initial $1,000 investment. Good luck! 📈"
+  },
+  {
+    "type": "function_call",
+    "id": "fc_685b3fe8e66081a19db64a59825d9838052749046f385c98",
+    "callId": "call_0WRVCyT5kfYwzlG5jLThCLDy",
+    "name": "think",
+    "status": "completed",
+    "arguments": "{\"thought_process\":[\"Start by reviewing my current portfolio—checking allocations, cash on hand, all stock positions, and any changes since the last session.\",\"Evaluate the after-hours and pre-market performance of my holdings: PLTR, TSLA, NVDA, GOOGL, and especially RIVN, which I recently added due to strong news-driven momentum.\",\"Analyze any new after-hours news, extended/morning-session market movers, and major macroeconomic or geopolitical shifts (such as the ceasefire and Fed outlook) for both risks and opportunities.\",\"Assess if any newly formed price trends or significant catalysts merit an immediate rotation (out of underperformers or into breaking news/momentum), or if holding through potential multi-day momentum is the ideal strategy for maximizing gains.\",\"Given low cash reserves, consider partial position trims only if an outsized, near-term opportunity is clear or to minimize risk in an overly volatile holding.\",\"Research current pre-market headlines and top gainers to scan for emerging opportunities or threats. Plan my actions with an eye toward portfolio diversification, risk management, and capital growth.\"]}",
+    "providerData": {
+      "id": "fc_685b3fe8e66081a19db64a59825d9838052749046f385c98",
+      "type": "function_call"
+    }
+  },
+  {
+    "type": "function_call_result",
+    "name": "think",
+    "callId": "call_0WRVCyT5kfYwzlG5jLThCLDy",
+    "status": "completed",
+    "output": {
+      "type": "text",
+      "text": "Completed thinking with 6 steps of reasoning."
+    }
+  },
+  {
+    "type": "function_call",
+    "id": "fc_685b3fef17f881a18e0e803259b1c9b3052749046f385c98",
+    "callId": "call_GaStrOnsdtmZbra60snp5VEB",
+    "name": "get_portfolio",
+    "status": "completed",
+    "arguments": "{}",
+    "providerData": {
+      "id": "fc_685b3fef17f881a18e0e803259b1c9b3052749046f385c98",
+      "type": "function_call"
+    }
+  },
+  {
+    "type": "function_call_result",
+    "name": "get_portfolio",
+    "callId": "call_GaStrOnsdtmZbra60snp5VEB",
+    "status": "completed",
+    "output": {
+      "type": "text",
+      "text": "Your cash balance is $12.29.\nCurrent holdings:\n  - PLTR: 1 shares\n  - TSLA: 1 shares\n  - NVDA: 1 shares\n  - GOOGL: 1 shares\n  - RIVN: 14 shares\n\nTrade history:\n  - 2025-06-24T13:14:10.516Z buy PLTR 1 shares at $139.92 per share, for a total of $139.92\n  - 2025-06-24T13:14:10.552Z buy TSLA 1 shares at $348.68 per share, for a total of $348.68\n  - 2025-06-24T13:14:10.562Z buy NVDA 2 shares at $144.17 per share, for a total of $288.34\n  - 2025-06-24T13:19:50.408Z buy GOOGL 1 shares at $165.19 per share, for a total of $165.19\n  - 2025-06-24T18:05:59.852Z sell NVDA 1 shares at $147.55 per share, for a total of $147.55\n  - 2025-06-24T18:06:07.560Z buy RIVN 14 shares at $13.795 per share, for a total of $193.13"
+    }
+  },
+  {
+    "type": "function_call",
+    "id": "fc_685b3ff08c7c81a1a39273140b27a07e052749046f385c98",
+    "callId": "call_VzkWV1ToMQXgZBRG1E3YcljE",
+    "name": "think",
+    "status": "completed",
+    "arguments": "{\"thought_process\":[\"My portfolio allocation is now: PLTR (1), TSLA (1), NVDA (1), GOOGL (1), RIVN (14), and $12.29 in cash. The most critical position to watch is RIVN because it was acquired on after-hours momentum/news.\",\"With core tech holdings largely stable and limited cash, the upside to further rotation is mostly dependent on outsized moves in an individual position (especially RIVN) or a break in trends/news.\",\"I need to check the latest after-hours and pre-market prices for my holdings, especially RIVN, to see if there’s been a continued run, a reversal, or stagnation overnight. This determines if I should lock short-term gains (if materialized) or hold for continued upside.\",\"Simultaneously, I should research current pre-market gainers, top news items, and any sector-wide headlines that could affect valuations for tech and growth (particularly in AI, EVs, and any Fed/geopolitical updates).\",\"If one of my holdings is spiking on news or shows excessive volatility risk, I may trim or sell, reallocating to a new pre-market leader or keeping a tighter cash reserve—otherwise, holding is the default plan given the quality of name diversification and market backdrop.\",\"I’ll now check after-hours/pre-market prices for PLTR, TSLA, NVDA, GOOGL, and especially RIVN, and scan for new market movers/news.\"]}",
+    "providerData": {
+      "id": "fc_685b3ff08c7c81a1a39273140b27a07e052749046f385c98",
+      "type": "function_call"
+    }
+  },
+  {
+    "type": "function_call_result",
+    "name": "think",
+    "callId": "call_VzkWV1ToMQXgZBRG1E3YcljE",
+    "status": "completed",
+    "output": {
+      "type": "text",
+      "text": "Completed thinking with 6 steps of reasoning."
+    }
+  },
+  {
+    "type": "function_call",
+    "id": "fc_685b3ff77de881a19686a618816f46da052749046f385c98",
+    "callId": "call_rFd8kqFaIHF2tfgIGoIINHjX",
+    "name": "get_stock_price",
+    "status": "completed",
+    "arguments": "{\"ticker\":\"PLTR\"}",
+    "providerData": {
+      "id": "fc_685b3ff77de881a19686a618816f46da052749046f385c98",
+      "type": "function_call"
+    }
+  },
+  {
+    "type": "function_call_result",
+    "name": "get_stock_price",
+    "callId": "call_rFd8kqFaIHF2tfgIGoIINHjX",
+    "status": "completed",
+    "output": {
+      "type": "text",
+      "text": "143.23"
+    }
+  },
+  {
+    "type": "function_call",
+    "id": "fc_685b3ffb081081a1b42f810137dfd7a8052749046f385c98",
+    "callId": "call_3YTsLOus3KUCY0trVkM5YVE0",
+    "name": "get_stock_price",
+    "status": "completed",
+    "arguments": "{\"ticker\":\"TSLA\"}",
+    "providerData": {
+      "id": "fc_685b3ffb081081a1b42f810137dfd7a8052749046f385c98",
+      "type": "function_call"
+    }
+  },
+  {
+    "type": "function_call_result",
+    "name": "get_stock_price",
+    "callId": "call_3YTsLOus3KUCY0trVkM5YVE0",
+    "status": "completed",
+    "output": {
+      "type": "text",
+      "text": "340.47"
+    }
+  },
+  {
+    "type": "function_call",
+    "id": "fc_685b3ffe2d7481a1808eac3ca0b6cb8e052749046f385c98",
+    "callId": "call_CYV3THMIUbl9GJgeioyiRBam",
+    "name": "get_stock_price",
+    "status": "completed",
+    "arguments": "{\"ticker\":\"NVDA\"}",
+    "providerData": {
+      "id": "fc_685b3ffe2d7481a1808eac3ca0b6cb8e052749046f385c98",
+      "type": "function_call"
+    }
+  },
+  {
+    "type": "function_call_result",
+    "name": "get_stock_price",
+    "callId": "call_CYV3THMIUbl9GJgeioyiRBam",
+    "status": "completed",
+    "output": {
+      "type": "text",
+      "text": "147.9"
+    }
+  },
+  {
+    "type": "function_call",
+    "id": "fc_685b4001c72481a1abb163aad0d26821052749046f385c98",
+    "callId": "call_NmBYUJLrl8qFmnpfdDCfAUyO",
+    "name": "get_stock_price",
+    "status": "completed",
+    "arguments": "{\"ticker\":\"GOOGL\"}",
+    "providerData": {
+      "id": "fc_685b4001c72481a1abb163aad0d26821052749046f385c98",
+      "type": "function_call"
+    }
+  },
+  {
+    "type": "function_call_result",
+    "name": "get_stock_price",
+    "callId": "call_NmBYUJLrl8qFmnpfdDCfAUyO",
+    "status": "completed",
+    "output": {
+      "type": "text",
+      "text": "166.77"
+    }
+  },
+  {
+    "type": "function_call",
+    "id": "fc_685b4005d3ec81a1a7d704bed22ee627052749046f385c98",
+    "callId": "call_wbRP1Ezlb5ZlHwWS5H6UYRXo",
+    "name": "get_stock_price",
+    "status": "completed",
+    "arguments": "{\"ticker\":\"RIVN\"}",
+    "providerData": {
+      "id": "fc_685b4005d3ec81a1a7d704bed22ee627052749046f385c98",
+      "type": "function_call"
+    }
+  },
+  {
+    "type": "function_call_result",
+    "name": "get_stock_price",
+    "callId": "call_wbRP1Ezlb5ZlHwWS5H6UYRXo",
+    "status": "completed",
+    "output": {
+      "type": "text",
+      "text": "13.81"
+    }
+  },
+  {
+    "type": "function_call",
+    "id": "fc_685b400979bc81a18b9dae7d778f34b3052749046f385c98",
+    "callId": "call_v4PGILnICPOXSAXWxrVdHBeU",
+    "name": "web_search",
+    "status": "completed",
+    "arguments": "{\"query\":\"US pre-market stock movers news 6/25/2025\"}",
+    "providerData": {
+      "id": "fc_685b400979bc81a18b9dae7d778f34b3052749046f385c98",
+      "type": "function_call"
+    }
+  },
+  {
+    "type": "function_call_result",
+    "name": "web_search",
+    "callId": "call_v4PGILnICPOXSAXWxrVdHBeU",
+    "status": "completed",
+    "output": {
+      "type": "text",
+      "text": "As of June 25, 2025, pre-market trading in the U.S. stock market is influenced by various factors, including earnings reports, corporate announcements, and economic data releases.\n\n**Top Pre-Market Gainers:**\n\n- **Affirm Holdings (AFRM):** Shares climbed over 4% following Goldman Sachs' initiation of coverage with a 'Buy' rating and a $42 price target. ([palmettograin.com](https://palmettograin.com/news/story/26991873/stocks-set-to-open-higher-as-investors-await-key-u-s-inflation-data-and-fed-speak?utm_source=openai))\n\n- **Altimmune (ALT):** The stock surged more than 12% after presenting positive data from a 48-week Phase 2 clinical trial of pemvidutide in obesity. ([palmettograin.com](https://palmettograin.com/news/story/26991873/stocks-set-to-open-higher-as-investors-await-key-u-s-inflation-data-and-fed-speak?utm_source=openai))\n\n- **RXO (RXO):** Shares advanced nearly 13% after announcing the acquisition of a freight brokerage business from UPS for approximately $1 billion. ([palmettograin.com](https://palmettograin.com/news/story/26991873/stocks-set-to-open-higher-as-investors-await-key-u-s-inflation-data-and-fed-speak?utm_source=openai))\n\n**Top Pre-Market Losers:**\n\n- **Five9 (FIVN):** The stock plunged over 16% after the software firm lowered its full-year revenue forecast due to weak booking trends. ([nasdaq.com](https://www.nasdaq.com/articles/stock-index-futures-slide-after-yesterdays-rally?utm_source=openai))\n\n- **Array Technologies (ARRY):** Shares slumped more than 11% after cutting its FY24 guidance. ([nasdaq.com](https://www.nasdaq.com/articles/stock-index-futures-slide-after-yesterdays-rally?utm_source=openai))\n\n**Market Indices:**\n\n- **S&P 500 E-Mini Futures (ESM25):** Up 0.05% in pre-market trading.\n\n- **Nasdaq 100 E-Mini Futures (NQM25):** Up 0.26% in pre-market trading. ([palmettograin.com](https://palmettograin.com/news/story/32363577/stocks-set-to-open-lower-after-trade-truce-rally-u-s-inflation-data-on-deck?utm_source=openai))\n\n**Economic Data:**\n\n- **Consumer Price Index (CPI):** Increased by 0.2% month-over-month, bringing the 12-month inflation rate to 2.3%, the lowest since February 2021. ([palmettograin.com](https://palmettograin.com/news/story/32363577/stocks-set-to-open-lower-after-trade-truce-rally-u-s-inflation-data-on-deck?utm_source=openai))\n\n**Notable Corporate News:**\n\n- **Amazon (AMZN):** Shares rose 0.74% following the announcement of a $10 billion AI and data-center investment in North Carolina and plans to embed agentic AI in logistics. ([monexa.ai](https://www.monexa.ai/blog/market-overview-morning-market-preview-june-5-2025-us-stocks-set-f-2025-06-05?utm_source=openai))\n\n- **Tesla (TSLA):** Shares fell 3.55% after a Morgan Stanley report highlighted potential eVTOL opportunities but noted near-term international sales weakness and CEO Elon Musk’s political commentary. ([monexa.ai](https://www.monexa.ai/blog/market-overview-morning-market-preview-june-5-2025-us-stocks-set-f-2025-06-05?utm_source=openai))\n\nPlease note that pre-market movements are subject to change as the market approaches the opening bell. "
+    }
+  },
+  {
+    "type": "function_call",
+    "id": "fc_685b40125a1481a1a9b0a006e967d6cc052749046f385c98",
+    "callId": "call_l1bn5X3BmJErlpZ7oksGJtMb",
+    "name": "think",
+    "status": "completed",
+    "arguments": "{\"thought_process\":[\"PLTR ($143.23), NVDA ($147.90), and GOOGL ($166.77) are all up slightly from entry levels, while TSLA ($340.47) has continued its minor drop from my purchase price ($348.68), now down about 2%. RIVN is stable at $13.81 after its breakout move yesterday, still above my entry price.\",\"Broader market index futures are mixed to up slightly, showing a generally stable to bullish environment, but there are crosscurrents with individual company news.\",\"TSLA is facing pre-market pressure (down 3.5%) on mixed news (analyst highlight of future eVTOL potential offset by concerns about international sales and Musk's political narrative). This adds some near-term downside risk to the position.\",\"RIVN remains a watch for follow-through. No dramatic selloff or reversal seen in the quote yet—momentum is holding. Core tech/AI names (PLTR, NVDA, GOOGL) continue to grind higher and remain in trend, with no urgent need to trim unless outsized gains materialize. Cash reserve is minimal, so trade flexibility is limited unless I rotate out of TSLA or another holding.\",\"Top pre-market gainers are AFFIRM, ALT, RXO—driven by specific news. They could offer upside if I rotate, but their stories are not clearly superior to current positions based on risk/reward and liquidity at the moment.\",\"Given TSLA’s clear underperformance and new negative news, the prudent move is to sell TSLA, minimize further downside, and rotate capital into a high-momentum or high-news name with better near-term upside (possibly one of today’s top pre-market gainers like ALT or RXO). Next, I should check latest pre-market prices for AFFIRM, ALT, and RXO to make an informed selection for potential capital rotation.\"]}",
+    "providerData": {
+      "id": "fc_685b40125a1481a1a9b0a006e967d6cc052749046f385c98",
+      "type": "function_call"
+    }
+  },
+  {
+    "type": "function_call_result",
+    "name": "think",
+    "callId": "call_l1bn5X3BmJErlpZ7oksGJtMb",
+    "status": "completed",
+    "output": {
+      "type": "text",
+      "text": "Completed thinking with 6 steps of reasoning."
+    }
+  },
+  {
+    "type": "function_call",
+    "id": "fc_685b401a546881a1b5037dc43e2ee72a052749046f385c98",
+    "callId": "call_kF3IxDg9z5nQReG47TGbZrJt",
+    "name": "get_stock_price",
+    "status": "completed",
+    "arguments": "{\"ticker\":\"ALT\"}",
+    "providerData": {
+      "id": "fc_685b401a546881a1b5037dc43e2ee72a052749046f385c98",
+      "type": "function_call"
+    }
+  },
+  {
+    "type": "function_call",
+    "id": "fc_685b401a72b081a18adf962db0fb3410052749046f385c98",
+    "callId": "call_kSo2OR64x8d27R9ZUSpEBZue",
+    "name": "get_stock_price",
+    "status": "completed",
+    "arguments": "{\"ticker\":\"RXO\"}",
+    "providerData": {
+      "id": "fc_685b401a72b081a18adf962db0fb3410052749046f385c98",
+      "type": "function_call"
+    }
+  },
+  {
+    "type": "function_call",
+    "id": "fc_685b401a8ca481a1b968041bb1119c72052749046f385c98",
+    "callId": "call_OteFZa2lFvHclnhcThcQXCHN",
+    "name": "get_stock_price",
+    "status": "completed",
+    "arguments": "{\"ticker\":\"AFRM\"}",
+    "providerData": {
+      "id": "fc_685b401a8ca481a1b968041bb1119c72052749046f385c98",
+      "type": "function_call"
+    }
+  },
+  {
+    "type": "function_call_result",
+    "name": "get_stock_price",
+    "callId": "call_kF3IxDg9z5nQReG47TGbZrJt",
+    "status": "completed",
+    "output": {
+      "type": "text",
+      "text": "7.19"
+    }
+  },
+  {
+    "type": "function_call_result",
+    "name": "get_stock_price",
+    "callId": "call_kSo2OR64x8d27R9ZUSpEBZue",
+    "status": "completed",
+    "output": {
+      "type": "text",
+      "text": "16.05"
+    }
+  },
+  {
+    "type": "function_call_result",
+    "name": "get_stock_price",
+    "callId": "call_OteFZa2lFvHclnhcThcQXCHN",
+    "status": "completed",
+    "output": {
+      "type": "text",
+      "text": "65.66"
+    }
+  },
+  {
+    "type": "function_call",
+    "id": "fc_685b402102e881a18df35ebd0f40dd65052749046f385c98",
+    "callId": "call_wKCNOEhrAApUCJyB92mmZOXg",
+    "name": "think",
+    "status": "completed",
+    "arguments": "{\"thought_process\":[\"ALT is at $7.19 (up 12% pre-market on clinical trial news), RXO at $16.05 (up 13% after a major acquisition), AFFIRM at $65.66 (up 4% on a bullish analyst initiation).\",\"TSLA is currently trading at $340.47. Selling TSLA would free up significant capital—enough for about 47 shares of ALT or roughly 21 shares of RXO or 5 shares of AFFIRM.\",\"Of these, ALT and RXO have the strongest pre-market momentum due to major company-specific catalysts. AFFIRM is up on an analyst upgrade but less dramatic in movement and less likely to spark a parabolic move.\",\"ALT, though volatile (biotech), is running on highly positive clinical news and has the highest percent gain pre-market. RXO is running on M&A news and also has solid upside but may have less extension than biotechs can achieve intraday.\",\"A diversified plan could split proceeds between ALT (momentum/speculation) and RXO (momentum/M&A), but with limited flexibility, focusing on the higher-momentum and lower price-per-share ALT may offer more leverage and risk/reward despite biotech volatility.\",\"Action: Sell TSLA, use proceeds to buy as many shares of ALT as feasible, and monitor closely for follow-through or reversal. Hold other core positions (PLTR, NVDA, GOOGL, RIVN) for diversified exposure.\"]}",
+    "providerData": {
+      "id": "fc_685b402102e881a18df35ebd0f40dd65052749046f385c98",
+      "type": "function_call"
+    }
+  },
+  {
+    "type": "function_call_result",
+    "name": "think",
+    "callId": "call_wKCNOEhrAApUCJyB92mmZOXg",
+    "status": "completed",
+    "output": {
+      "type": "text",
+      "text": "Completed thinking with 6 steps of reasoning."
+    }
+  },
+  {
+    "type": "function_call",
+    "id": "fc_685b4026154881a191eb9508bdbd77a2052749046f385c98",
+    "callId": "call_NO6HJ7aSxf7aqqHZRHkjEU87",
+    "name": "sell",
+    "status": "completed",
+    "arguments": "{\"ticker\":\"TSLA\",\"shares\":1}",
+    "providerData": {
+      "id": "fc_685b4026154881a191eb9508bdbd77a2052749046f385c98",
+      "type": "function_call"
+    }
+  },
+  {
+    "type": "function_call_result",
+    "name": "sell",
+    "callId": "call_NO6HJ7aSxf7aqqHZRHkjEU87",
+    "status": "completed",
+    "output": {
+      "type": "text",
+      "text": "Sold 1 shares of TSLA at $340.47 per share, for a total of $340.47. Your cash balance is now $352.76."
+    }
+  },
+  {
+    "type": "function_call",
+    "id": "fc_685b40296c4881a18722c7ceb76a87e3052749046f385c98",
+    "callId": "call_XZUzROD0xneybMkYjhtyfvhc",
+    "name": "buy",
+    "status": "completed",
+    "arguments": "{\"ticker\":\"ALT\",\"shares\":49}",
+    "providerData": {
+      "id": "fc_685b40296c4881a18722c7ceb76a87e3052749046f385c98",
+      "type": "function_call"
+    }
+  },
+  {
+    "type": "function_call_result",
+    "name": "buy",
+    "callId": "call_XZUzROD0xneybMkYjhtyfvhc",
+    "status": "completed",
+    "output": {
+      "type": "text",
+      "text": "Purchased 49 shares of ALT at $7.19 per share, for a total of $352.31. Your cash balance is now $0.45."
+    }
+  },
+  {
+    "type": "function_call",
+    "id": "fc_685b402cd0b081a181a003dbc468a8f2052749046f385c98",
+    "callId": "call_lnhxaueYk10LRdIHp37WdxO8",
+    "name": "think",
+    "status": "completed",
+    "arguments": "{\"thought_process\":[\"I sold 1 share of TSLA at $340.47, minimizing further downside risk from negative news and recent weakness.\",\"With the proceeds, I purchased 49 shares of ALT at $7.19, capturing momentum in a top pre-market gainer driven by strong clinical data.\",\"My portfolio now holds: PLTR (1), NVDA (1), GOOGL (1), RIVN (14), ALT (49), with $0.45 in cash. This preserves core tech leadership exposure while aggressively leveraging a major biotech news play with tradeable momentum.\",\"ALT is high risk/high potential reward; if momentum continues, this could provide a fast gain. If the move fades, losses are managed by portfolio size control and diversification with my other holdings.\",\"Action plan for the next window: Watch ALT for profit opportunities or trend reversals, and be ready to trim quickly if the news momentum fades. Continue to monitor the broader market and other holdings for new catalysts or trading opportunities.\",\"No further trades for this session unless additional news warrants immediate action. Portfolio is positioned to benefit from both breakout potential and tech sector strength.\"]}",
+    "providerData": {
+      "id": "fc_685b402cd0b081a181a003dbc468a8f2052749046f385c98",
+      "type": "function_call"
+    }
+  },
+  {
+    "type": "function_call_result",
+    "name": "think",
+    "callId": "call_lnhxaueYk10LRdIHp37WdxO8",
+    "status": "completed",
+    "output": {
+      "type": "text",
+      "text": "Completed thinking with 6 steps of reasoning."
+    }
+  },
+  {
+    "id": "msg_685b4031c0d481a1a195fccc14b0c574052749046f385c98",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "output_text",
+        "text": "Trade recap and updated portfolio:\n\n- I sold TSLA at $340.47 to limit downside risk after further negative news and market underperformance.\n- I used those funds to buy 49 shares of ALT at $7.19, capitalizing on strong biotech momentum driven by positive clinical trial results—a typical high-velocity pre-market news play.\n- My new portfolio:\n  - PLTR: 1 share (tech/AI)\n  - NVDA: 1 share (tech/AI)\n  - GOOGL: 1 share (tech/AI)\n  - RIVN: 14 shares (EV, news-driven momentum)\n  - ALT: 49 shares (biotech, news-driven breakout)\n  - Cash: $0.45\n\n**Rationale:**  \nThis adjustment maximizes exposure to current market momentum while maintaining strong, diversified positions in tech and innovation. The ALT bet is high-risk/high-reward, sized carefully against the total portfolio.\n\n**Plan:**  \n- Monitor ALT for rapid profit potential or signs of momentum fading (ready to trim or exit swiftly if needed).\n- Watch core holdings for further breakouts or sector rotation.\n- Stay alert for new macro or sector news moving markets in the next cycle.\n\nPortfolio is now well-positioned to benefit from both breakout and tech sector strength!",
+        "annotations": []
+      }
+    ],
+    "status": "completed",
+    "providerData": {}
   }
 ]
