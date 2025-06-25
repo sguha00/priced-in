@@ -4,7 +4,7 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 
 <!-- auto start -->
 
-## 💰 Portfolio value: $1,004.00** (0.40% return)
+## 💰 Portfolio value: $934.42** (-6.56% return)
 
 ### 📊 Holdings
 
@@ -15,7 +15,7 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 | NVDA | 1 | $147.90 |
 | GOOGL | 1 | $166.77 |
 | RIVN | 14 | $193.34 |
-| ALT | 49 | $352.31 |
+| ALT | 49 | $282.73 |
 
 ### 📈 Recent trades
 
