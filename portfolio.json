@@ -1,12 +1,13 @@
 {
-  "cash": 0.45,
+  "cash": 2.03,
   "holdings": {
     "PLTR": 1,
     "TSLA": 0,
     "NVDA": 1,
     "GOOGL": 1,
     "RIVN": 14,
-    "ALT": 49
+    "ALT": 0,
+    "BB": 81
   },
   "history": [
     {
@@ -72,6 +73,22 @@
       "shares": 49,
       "price": 7.19,
       "total": 352.31
+    },
+    {
+      "date": "2025-06-25T12:07:27.419Z",
+      "type": "sell",
+      "ticker": "ALT",
+      "shares": 49,
+      "price": 7.19,
+      "total": 352.31
+    },
+    {
+      "date": "2025-06-25T12:08:38.290Z",
+      "type": "buy",
+      "ticker": "BB",
+      "shares": 81,
+      "price": 4.33,
+      "total": 350.73
     }
   ]
 }
