@@ -84,14 +84,16 @@ const getNetWorthTool = tool({
   async execute() {
     const netWorth = await calculateNetWorth();
     const portfolio = await getPortfolio();
-    const returnPercentage = (((netWorth - 1000) / 1000) * 100).toFixed(2);
+    const annualizedReturn = calculateAnnualizedReturn(portfolio);
 
-    log(`💰 Current net worth: $${netWorth} (${returnPercentage}% return)`);
+    log(
+      `💰 Current net worth: $${netWorth} (${annualizedReturn}% annualized return)`
+    );
 
     return `Your current net worth is $${netWorth}
 - Cash: $${portfolio.cash}
 - Holdings value: $${(netWorth - portfolio.cash).toFixed(2)}
-- Total return: ${returnPercentage}% (started with $1,000)
+- Annualized return: ${annualizedReturn}% (started with $1,000)
 - ${netWorth >= 1000 ? "📈 Up" : "📉 Down"} $${Math.abs(
       netWorth - 1000
     ).toFixed(2)} from initial investment`;
@@ -218,6 +220,28 @@ const calculateNetWorth = async (): Promise<number> => {
   return netWorth;
 };
 
+const calculateAnnualizedReturn = (
+  portfolio: z.infer<typeof portfolioSchema>
+): string => {
+  if (portfolio.history.length === 0) return "0.00";
+
+  const firstTradeDate = new Date(portfolio.history[0].date);
+  const currentDate = new Date();
+  const timeElapsed = currentDate.getTime() - firstTradeDate.getTime();
+  const daysElapsed = timeElapsed / (1000 * 60 * 60 * 24);
+  const yearsElapsed = daysElapsed / 365.25;
+
+  if (yearsElapsed <= 0) return "0.00";
+
+  // Calculate total return
+  const totalReturn = (portfolio.cash - 1000) / 1000;
+
+  // Calculate annualized return using compound annual growth rate (CAGR)
+  const annualizedReturn = Math.pow(1 + totalReturn, 1 / yearsElapsed) - 1;
+
+  return (annualizedReturn * 100).toFixed(2);
+};
+
 const calculatePortfolioValue = async (): Promise<{
   totalValue: number;
   holdings: Record<string, { shares: number; value: number }>;
@@ -273,12 +297,13 @@ const updateReadme = async () => {
     const { totalValue, holdings } = await calculatePortfolioValue();
     const readmeContent = await readFile("README.md", "utf-8");
     const recentTrades = portfolio.history.slice(-20).reverse();
+    const annualizedReturn = calculateAnnualizedReturn(portfolio);
     const portfolioSection = `<!-- auto start -->
 
 ## 💰 Portfolio value: $${totalValue.toLocaleString("en-US", {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2,
-    })}** (${(((totalValue - 1000) / 1000) * 100).toFixed(2)}% return)
+    })}** (${annualizedReturn}% CAGR)
 
 ### 📊 Holdings
 
