@@ -1,5 +1,5 @@
 {
-  "cash": 1.42,
+  "cash": 139.82,
   "holdings": {
     "PLTR": 0,
     "TSLA": 0,
@@ -8,7 +8,7 @@
     "RIVN": 0,
     "ALT": 0,
     "BB": 0,
-    "NIO": 40
+    "NIO": 0
   },
   "history": [
     {
@@ -162,6 +162,14 @@
       "shares": 0.82,
       "price": 157.75,
       "total": 129.355
+    },
+    {
+      "date": "2025-06-29T18:05:40.016Z",
+      "type": "sell",
+      "ticker": "NIO",
+      "shares": 40,
+      "price": 3.46,
+      "total": 138.4
     }
   ]
 }
