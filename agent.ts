@@ -84,7 +84,7 @@ const getNetWorthTool = tool({
   async execute() {
     const netWorth = await calculateNetWorth();
     const portfolio = await getPortfolio();
-    const annualizedReturn = calculateAnnualizedReturn(portfolio);
+    const annualizedReturn = await calculateAnnualizedReturn(portfolio);
 
     log(
       `💰 Current net worth: $${netWorth} (${annualizedReturn}% annualized return)`
@@ -220,26 +220,51 @@ const calculateNetWorth = async (): Promise<number> => {
   return netWorth;
 };
 
-const calculateAnnualizedReturn = (
+const calculateCAGR = (days: number, currentValue: number): number => {
+  const startValue = 1000;
+  const years = days / 365;
+  const cagr = Math.pow(currentValue / startValue, 1 / years) - 1;
+  return cagr;
+};
+
+const calculateAnnualizedReturn = async (
   portfolio: z.infer<typeof portfolioSchema>
-): string => {
+): Promise<string> => {
   if (portfolio.history.length === 0) return "0.00";
 
   const firstTradeDate = new Date(portfolio.history[0].date);
   const currentDate = new Date();
-  const timeElapsed = currentDate.getTime() - firstTradeDate.getTime();
-  const daysElapsed = timeElapsed / (1000 * 60 * 60 * 24);
-  const yearsElapsed = daysElapsed / 365.25;
 
-  if (yearsElapsed <= 0) return "0.00";
+  let totalHoldingsValue = 0;
+  for (const [ticker, shares] of Object.entries(portfolio.holdings))
+    if (shares > 0) {
+      try {
+        const price = await getStockPrice(ticker);
+        totalHoldingsValue += shares * price;
+      } catch (error) {
+        log(`⚠️ Failed to get price for ${ticker}: ${error}`);
+      }
+    }
 
-  // Calculate total return
-  const totalReturn = (portfolio.cash - 1000) / 1000;
+  const currentTotalValue = portfolio.cash + totalHoldingsValue;
+  log(`💰 Current total value: $${currentTotalValue}`);
 
-  // Calculate annualized return using compound annual growth rate (CAGR)
-  const annualizedReturn = Math.pow(1 + totalReturn, 1 / yearsElapsed) - 1;
+  const days =
+    (currentDate.getTime() - firstTradeDate.getTime()) / (1000 * 60 * 60 * 24);
+  log(`🗓 Days since first trade: ${days.toFixed(2)}`);
 
-  return (annualizedReturn * 100).toFixed(2);
+  if (days < 1) {
+    log("⏳ Not enough time has passed to compute CAGR accurately.");
+    return "N/A";
+  }
+
+  const cagr = calculateCAGR(days, currentTotalValue);
+  log(`💰 CAGR: ${cagr * 100}%`);
+
+  return (cagr * 100).toLocaleString("en-US", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  });
 };
 
 const calculatePortfolioValue = async (): Promise<{
@@ -297,7 +322,7 @@ const updateReadme = async () => {
     const { totalValue, holdings } = await calculatePortfolioValue();
     const readmeContent = await readFile("README.md", "utf-8");
     const recentTrades = portfolio.history.slice(-20).reverse();
-    const annualizedReturn = calculateAnnualizedReturn(portfolio);
+    const annualizedReturn = await calculateAnnualizedReturn(portfolio);
     const portfolioSection = `<!-- auto start -->
 
 ## 💰 Portfolio value: $${totalValue.toLocaleString("en-US", {
@@ -326,6 +351,8 @@ ${
           (trade) =>
             `- **${new Date(trade.date).toLocaleString("en-US", {
               timeZone: "UTC",
+              dateStyle: "long",
+              timeStyle: "medium",
             })}**: ${trade.type.toUpperCase()} ${trade.shares} ${
               trade.ticker
             } @ $${trade.price}/share ($${trade.total.toFixed(2)})`
