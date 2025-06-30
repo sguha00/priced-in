@@ -4,18 +4,19 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 
 <!-- auto start -->
 
-## 💰 Portfolio value: $1,078.71** (12,655.69% CAGR)
+## 💰 Portfolio value: $1,078.71** (10,300.10% CAGR)
 
 ### 📊 Holdings
 
 | Asset | Shares | Value |
 |-------|--------|-------|
-| Cash | - | $139.82 |
-| NVDA | 4.82 | $760.36 |
+| Cash | - | $69.78 |
+| NVDA | 5.264 | $830.40 |
 | GOOGL | 1 | $178.53 |
 
 ### 📈 Recent trades
 
+- **June 30, 2025 at 12:07:38 PM**: BUY 0.444 NVDA @ $157.75/share ($70.04)
 - **June 29, 2025 at 6:05:40 PM**: SELL 40 NIO @ $3.46/share ($138.40)
 - **June 28, 2025 at 6:05:57 AM**: BUY 0.82 NVDA @ $157.75/share ($129.35)
 - **June 28, 2025 at 6:05:45 AM**: SELL 1 PLTR @ $130.74/share ($130.74)
@@ -35,7 +36,6 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 - **June 24, 2025 at 1:19:50 PM**: BUY 1 GOOGL @ $165.19/share ($165.19)
 - **June 24, 2025 at 1:14:10 PM**: BUY 2 NVDA @ $144.17/share ($288.34)
 - **June 24, 2025 at 1:14:10 PM**: BUY 1 TSLA @ $348.68/share ($348.68)
-- **June 24, 2025 at 1:14:10 PM**: BUY 1 PLTR @ $139.92/share ($139.92)
 
 <!-- auto end -->
 
