@@ -1,9 +1,9 @@
 {
-  "cash": 69.78,
+  "cash": 0.08,
   "holdings": {
     "PLTR": 0,
     "TSLA": 0,
-    "NVDA": 5.264,
+    "NVDA": 5.705,
     "GOOGL": 1,
     "RIVN": 0,
     "ALT": 0,
@@ -178,6 +178,14 @@
       "shares": 0.444,
       "price": 157.75,
       "total": 70.041
+    },
+    {
+      "date": "2025-06-30T18:06:24.724Z",
+      "type": "buy",
+      "ticker": "NVDA",
+      "shares": 0.441,
+      "price": 158.04,
+      "total": 69.69564
     }
   ]
 }
