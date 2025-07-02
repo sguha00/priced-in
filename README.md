@@ -4,20 +4,22 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 
 <!-- auto start -->
 
-## 💰 Portfolio value: $1,051.52** (980.62% CAGR)
+## 💰 Portfolio value: $1,051.52** (902.73% CAGR)
 
 ### 📊 Holdings
 
 | Asset | Shares | Value |
 |-------|--------|-------|
-| Cash | - | $63.76 |
+| Cash | - | $44.67 |
 | NVDA | 4.82 | $738.91 |
 | GOOGL | 1 | $175.84 |
 | RCL | 0.146 | $46.00 |
 | HEI | 0.084 | $27.01 |
+| XLI | 0.129 | $19.09 |
 
 ### 📈 Recent trades
 
+- **July 2, 2025 at 12:07:32 PM**: BUY 0.129 XLI @ $148.01/share ($19.09)
 - **July 2, 2025 at 6:06:55 AM**: BUY 0.084 HEI @ $321.51/share ($27.01)
 - **July 2, 2025 at 12:17:45 AM**: BUY 0.146 RCL @ $315.1/share ($46.00)
 - **July 1, 2025 at 6:05:53 PM**: SELL 0.885 NVDA @ $154.45/share ($136.69)
@@ -37,7 +39,6 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 - **June 25, 2025 at 12:07:27 PM**: SELL 49 ALT @ $7.19/share ($352.31)
 - **June 25, 2025 at 12:17:48 AM**: BUY 49 ALT @ $7.19/share ($352.31)
 - **June 25, 2025 at 12:17:44 AM**: SELL 1 TSLA @ $340.47/share ($340.47)
-- **June 24, 2025 at 6:06:07 PM**: BUY 14 RIVN @ $13.795/share ($193.13)
 
 <!-- auto end -->
 
