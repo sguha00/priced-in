@@ -4,21 +4,22 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 
 <!-- auto start -->
 
-## 💰 Portfolio value: $1,073.96** (2,293.26% CAGR)
+## 💰 Portfolio value: $1,074.76** (2,142.09% CAGR)
 
 ### 📊 Holdings
 
 | Asset | Shares | Value |
 |-------|--------|-------|
-| Cash | - | $44.67 |
-| NVDA | 4.82 | $757.90 |
-| GOOGL | 1 | $178.43 |
-| RCL | 0.146 | $47.08 |
-| HEI | 0.084 | $26.82 |
-| XLI | 0.129 | $19.06 |
+| Cash | - | $30.74 |
+| NVDA | 4.82 | $757.95 |
+| GOOGL | 1 | $178.64 |
+| RCL | 0.146 | $47.61 |
+| HEI | 0.084 | $26.78 |
+| XLI | 0.223 | $33.04 |
 
 ### 📈 Recent trades
 
+- **July 3, 2025 at 12:17:56 AM**: BUY 0.094 XLI @ $148.16/share ($13.93)
 - **July 2, 2025 at 12:07:32 PM**: BUY 0.129 XLI @ $148.01/share ($19.09)
 - **July 2, 2025 at 6:06:55 AM**: BUY 0.084 HEI @ $321.51/share ($27.01)
 - **July 2, 2025 at 12:17:45 AM**: BUY 0.146 RCL @ $315.1/share ($46.00)
@@ -38,7 +39,6 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 - **June 25, 2025 at 12:08:38 PM**: BUY 81 BB @ $4.33/share ($350.73)
 - **June 25, 2025 at 12:07:27 PM**: SELL 49 ALT @ $7.19/share ($352.31)
 - **June 25, 2025 at 12:17:48 AM**: BUY 49 ALT @ $7.19/share ($352.31)
-- **June 25, 2025 at 12:17:44 AM**: SELL 1 TSLA @ $340.47/share ($340.47)
 
 <!-- auto end -->
 
