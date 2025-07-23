@@ -299,7 +299,23 @@ const loadThread = async (): Promise<AgentInputItem[]> => {
   try {
     if (existsSync("thread.json")) {
       const threadData = await readFile("thread.json", "utf-8");
-      return JSON.parse(threadData).slice(-1000);
+      const thread = JSON.parse(threadData);
+      if (thread.length <= 1000) return thread;
+      // Find the index of the last tool call in the last 1000 items
+      let start = thread.length - 1000;
+      for (let i = start; i < thread.length; i++) {
+        const item = thread[i];
+        // Heuristic: tool call is usually role: "assistant" with function_call or tool_call
+        if (
+          (item.role === "assistant" &&
+            (item.function_call || item.tool_call)) ||
+          item.type === "function_call"
+        ) {
+          start = i;
+          break;
+        }
+      }
+      return thread.slice(start);
     }
   } catch (error) {
     log(`⚠️ Failed to load thread history: ${error}`);
