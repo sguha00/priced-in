@@ -4,18 +4,18 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 
 <!-- auto start -->
 
-## 💰 Portfolio value: $1,120.71** (1,036.34% CAGR)
+## 💰 Portfolio value: $1,149.55** (472.23% CAGR)
 
 ### 📊 Holdings
 
 | Asset | Shares | Value |
 |-------|--------|-------|
 | Cash | - | $0.08 |
-| NVDA | 4.82 | $800.07 |
-| GOOGL | 1 | $180.29 |
-| RCL | 0.146 | $49.45 |
-| HEI | 0.084 | $26.25 |
-| XLI | 0.43 | $64.57 |
+| NVDA | 4.82 | $815.06 |
+| GOOGL | 1 | $189.73 |
+| RCL | 0.146 | $51.62 |
+| HEI | 0.084 | $27.04 |
+| XLI | 0.43 | $66.02 |
 
 ### 📈 Recent trades
 
@@ -29,16 +29,6 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 - **June 30, 2025 at 6:06:24 PM**: BUY 0.441 NVDA @ $158.04/share ($69.70)
 - **June 30, 2025 at 12:07:38 PM**: BUY 0.444 NVDA @ $157.75/share ($70.04)
 - **June 29, 2025 at 6:05:40 PM**: SELL 40 NIO @ $3.46/share ($138.40)
-- **June 28, 2025 at 6:05:57 AM**: BUY 0.82 NVDA @ $157.75/share ($129.35)
-- **June 28, 2025 at 6:05:45 AM**: SELL 1 PLTR @ $130.74/share ($130.74)
-- **June 27, 2025 at 12:08:51 PM**: BUY 0.38 NVDA @ $155.02/share ($58.91)
-- **June 27, 2025 at 12:08:45 PM**: BUY 40 NIO @ $3.42/share ($136.80)
-- **June 27, 2025 at 12:08:41 PM**: SELL 14 RIVN @ $13.91/share ($194.74)
-- **June 26, 2025 at 6:05:56 PM**: BUY 0.12 NVDA @ $155.99/share ($18.72)
-- **June 26, 2025 at 12:07:10 PM**: BUY 0.5 NVDA @ $154.31/share ($77.16)
-- **June 25, 2025 at 6:06:14 PM**: BUY 2 NVDA @ $153.66/share ($307.32)
-- **June 25, 2025 at 6:06:05 PM**: SELL 81 BB @ $4.965/share ($402.16)
-- **June 25, 2025 at 12:08:38 PM**: BUY 81 BB @ $4.33/share ($350.73)
 
 <!-- auto end -->
 

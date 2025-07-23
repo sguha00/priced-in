@@ -32,7 +32,7 @@ const portfolioSchema = z.object({
 
 const webSearch = async (query: string): Promise<string> => {
   const response = await client.responses.create({
-    model: "gpt-4.1",
+    model: "gpt-4.1-mini",
     input: `Please use web search to answer this query from the user and respond with a short summary in markdown of what you found:\n\n${query}`,
     tools: [{ type: "web_search_preview" }],
   });
@@ -41,7 +41,7 @@ const webSearch = async (query: string): Promise<string> => {
 
 const getStockPrice = async (ticker: string): Promise<number> => {
   const response = await client.responses.parse({
-    model: "gpt-4.1",
+    model: "gpt-4.1-mini",
     input: `What is the current price of the stock ticker $${ticker}? Please use web search to get the latest price and then answer in short.`,
     tools: [{ type: "web_search_preview" }],
     text: { format: zodTextFormat(z.object({ price: z.number() }), "price") },
@@ -299,23 +299,7 @@ const loadThread = async (): Promise<AgentInputItem[]> => {
   try {
     if (existsSync("thread.json")) {
       const threadData = await readFile("thread.json", "utf-8");
-      const thread = JSON.parse(threadData);
-      if (thread.length <= 1000) return thread;
-      // Find the index of the last tool call in the last 1000 items
-      let start = thread.length - 1000;
-      for (let i = start; i < thread.length; i++) {
-        const item = thread[i];
-        // Heuristic: tool call is usually role: "assistant" with function_call or tool_call
-        if (
-          (item.role === "assistant" &&
-            (item.function_call || item.tool_call)) ||
-          item.type === "function_call"
-        ) {
-          start = i;
-          break;
-        }
-      }
-      return thread.slice(start);
+      return JSON.parse(threadData);
     }
   } catch (error) {
     log(`⚠️ Failed to load thread history: ${error}`);
