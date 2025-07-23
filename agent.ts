@@ -373,6 +373,7 @@ ${
               trade.ticker
             } @ $${trade.price}/share ($${trade.total.toFixed(2)})`
         )
+        .slice(0, 10)
         .join("\n")
     : "- No trades yet"
 }
