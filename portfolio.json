@@ -1,9 +1,9 @@
 {
-  "cash": 0.08,
+  "cash": 5.59,
   "holdings": {
     "PLTR": 0,
     "TSLA": 0,
-    "NVDA": 4.82,
+    "NVDA": 2.8200000000000003,
     "GOOGL": 1,
     "RIVN": 0,
     "ALT": 0,
@@ -11,7 +11,10 @@
     "NIO": 0,
     "RCL": 0.146,
     "HEI": 0.084,
-    "XLI": 0.43
+    "XLI": 0.43,
+    "HLIT": 7,
+    "ENVB": 89,
+    "IMNN": 25
   },
   "history": [
     {
@@ -245,6 +248,38 @@
       "shares": 0.106,
       "price": 148.16,
       "total": 15.70496
+    },
+    {
+      "date": "2025-07-30T05:39:51.534Z",
+      "type": "sell",
+      "ticker": "NVDA",
+      "shares": 2,
+      "price": 175.51,
+      "total": 351.02
+    },
+    {
+      "date": "2025-07-30T05:40:08.746Z",
+      "type": "buy",
+      "ticker": "HLIT",
+      "shares": 7,
+      "price": 8.72,
+      "total": 61.040000000000006
+    },
+    {
+      "date": "2025-07-30T05:40:09.112Z",
+      "type": "buy",
+      "ticker": "ENVB",
+      "shares": 89,
+      "price": 1.23,
+      "total": 109.47
+    },
+    {
+      "date": "2025-07-30T05:40:17.120Z",
+      "type": "buy",
+      "ticker": "IMNN",
+      "shares": 25,
+      "price": 7,
+      "total": 175
     }
   ]
 }
