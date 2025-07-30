@@ -1,5 +1,5 @@
 {
-  "cash": 77.95,
+  "cash": 0.46,
   "holdings": {
     "PLTR": 0,
     "TSLA": 0,
@@ -13,7 +13,7 @@
     "HEI": 0,
     "XLI": 0,
     "HLIT": 0,
-    "ENVB": 0,
+    "ENVB": 63,
     "IMNN": 0,
     "COST": 0,
     "CASK": 312,
@@ -53,6 +53,14 @@
       "shares": 240,
       "price": 0.6445,
       "total": 154.67999999999998
+    },
+    {
+      "date": "2025-07-30T06:05:33.485Z",
+      "type": "buy",
+      "ticker": "ENVB",
+      "shares": 63,
+      "price": 1.23,
+      "total": 77.49
     }
   ]
 }

@@ -2663,3 +2663,74 @@ The portfolio now targets both rapid capital growth and core stability, balancin
 [2025-07-30T05:55:53.654Z] ⏳ Not enough time has passed to compute CAGR accurately.
 [2025-07-30T05:55:53.654Z] 🗓 Days since first trade: 0.00
 [2025-07-30T05:55:53.661Z] 📝 Updated README with portfolio value: $1000
+[2025-07-30T06:04:47.070Z] Starting agent
+[2025-07-30T06:04:51.014Z] 🧠 Start by reviewing the current portfolio: check all positions (CDNS, STAI, CASK, NVNI, remaining cash) to determine if momentum is continuing, faded, or if sharp reversals have occurred.
+[2025-07-30T06:04:51.015Z] 🧠 Evaluate each position for gains/losses, considering taking profits from microcap winners (STAI, CASK, NVNI) or cutting losers before they erode capital.
+[2025-07-30T06:04:51.015Z] 🧠 Check for any major overnight/pre-market news that could accelerate or reverse trends in core holding CDNS or the microcaps. Identify new potential momentum movers for capital rotation.
+[2025-07-30T06:04:51.015Z] 🧠 Reassess market context: are large caps rebounding, or are microcap speculative cycles persisting? Confirm with fresh news, earnings, or macro headlines.
+[2025-07-30T06:04:51.015Z] 🧠 Decide strategic actions—take profits, rotate, or hold. Deploy remaining cash if strong new opportunities appear or rebalance to manage risk and maximize growth.
+[2025-07-30T06:04:51.015Z] 🧠 Next: Review live portfolio details to anchor analysis.
+[2025-07-30T06:04:52.050Z] 💹 Fetched portfolio: $77.95
+[2025-07-30T06:04:56.032Z] 🧠 Portfolio is diversified as planned: 1 CDNS (stable, large-cap), and microcap allocations in STAI (185 shares), CASK (312), NVNI (240), with $77.95 in cash.
+[2025-07-30T06:04:56.033Z] 🧠 No immediate trade profits/losses can be known without current price quotes; need to check premarket prices for each holding to determine if momentum continues or reversal is evident.
+[2025-07-30T06:04:56.033Z] 🧠 Determine if any holding is up sharply (≥10-20% gain) for potential profit-taking, or down sharply for risk limitation.
+[2025-07-30T06:04:56.033Z] 🧠 Scan for overnight/pre-market news and most active movers to see if better momentum opportunities exist for new capital or rotation.
+[2025-07-30T06:04:56.033Z] 🧠 After profit/loss review and fresh news scan, identify if capital should remain in current positions or be rotated into fresh trades. Decide whether to deploy remaining cash or hold as reserve depending on opportunity and risk environment.
+[2025-07-30T06:04:56.033Z] 🧠 First step: Get up-to-date price quotes for CDNS, STAI, CASK, and NVNI.
+[2025-07-30T06:05:00.306Z] 🔖 Searched for stock price for CDNS: $366.26
+[2025-07-30T06:05:00.719Z] 🔖 Searched for stock price for STAI: $1.19
+[2025-07-30T06:05:01.039Z] 🔖 Searched for stock price for CASK: $0.58
+[2025-07-30T06:05:01.052Z] 🔖 Searched for stock price for NVNI: $0.6445
+[2025-07-30T06:05:05.305Z] 🧠 All current positions are trading at the prices at which they were purchased: CDNS ($366.26), STAI ($1.19), CASK ($0.58), NVNI ($0.6445).
+[2025-07-30T06:05:05.305Z] 🧠 No unrealized gains or losses on any position yet—momentum in microcaps has not continued or reversed since last trade; implies market is flat/quiet or pricing is stale early pre-market.
+[2025-07-30T06:05:05.305Z] 🧠 Cash reserve of $77.95 remains available for new trades, but no compelling reason to sell or rotate from current holdings without new catalysts or price movement.
+[2025-07-30T06:05:05.305Z] 🧠 Opportunity: Scan breaking premarket news/top movers for July 30 (post-6am) to identify if any new momentum names or fresh catalysts have appeared for a tactical move with cash or repositioning if risk becomes apparent.
+[2025-07-30T06:05:05.305Z] 🧠 Next: Web search for fresh top premarket movers or major news since last cycle, then reassess portfolio or allocate cash if high-probability opportunity is found.
+[2025-07-30T06:05:06.679Z] 🔍 Searching the web for: stock market top gainers July 30 2025 premarket
+[2025-07-30T06:05:19.356Z] 🧠 Top premarket movers for July 30: IMNN (+133%), JTAI (+57%), ENVB (+32%), ISPO (+26%), PHAR (+21%), SFM (+17%), HLIT (+17%), DTCK (+15%), TTOO (+14%), SERV (+14%).
+[2025-07-30T06:05:19.356Z] 🧠 Momentum is concentrated in biotech (IMNN, ENVB, PHAR, TTOO), AI/futuristic tech (JTAI, SERV), and select earnings-driven moves (SFM, HLIT).
+[2025-07-30T06:05:19.356Z] 🧠 With $77.95 in cash, can only make a small position, ideally into one high-momentum premarket leader for a quick breakout trade. Suggests focus on IMNN, ENVB, or JTAI, based on catalyst strength and affordability.
+[2025-07-30T06:05:19.356Z] 🧠 Current holdings are flat. Rotating a small position into one of these fresh movers could maximize chance for a quick gain. Maintain existing positions (CDNS, STAI, CASK, NVNI) as no adverse movement has appeared.
+[2025-07-30T06:05:19.356Z] 🧠 Next: Get price quotes for IMNN, ENVB, and JTAI. Allocate $77.95 to the most affordable, highest-momentum ticker that is not dramatically overextended versus premarket level.
+[2025-07-30T06:05:24.603Z] 🔖 Searched for stock price for JTAI: $3.89
+[2025-07-30T06:05:24.622Z] 🔖 Searched for stock price for ENVB: $1.23
+[2025-07-30T06:05:25.141Z] 🔖 Searched for stock price for IMNN: $7
+[2025-07-30T06:05:28.599Z] 🧠 IMNN is trading at $7, ENVB at $1.23, and JTAI at $3.89.
+[2025-07-30T06:05:28.599Z] 🧠 With $77.95 cash, can buy 11 shares of IMNN ($77), 63 shares of ENVB ($77.49), or 20 shares of JTAI ($77.80). ENVB offers the largest share count and greatest possible upside exposure given cash limitations.
+[2025-07-30T06:05:28.599Z] 🧠 IMNN has the biggest single-day momentum, but ENVB is cheaper and allows a more meaningful position. JTAI is mid-range—good if seeking a balance, but momentum in IMNN is much stronger on this cycle.
+[2025-07-30T06:05:28.599Z] 🧠 Best risk/reward: allocate entire $77.95 to as many ENVB shares as possible to maximize potential profit on continued biotech momentum.
+[2025-07-30T06:05:28.599Z] 🧠 Next: Execute buy for 63 ENVB shares at $1.23 per share.
+[2025-07-30T06:05:33.485Z] 💰 Purchased 63 shares of ENVB at $1.23 per share
+[2025-07-30T06:05:37.334Z] 🧠 Successfully deployed remaining cash into 63 shares of ENVB at $1.23, fully utilizing available capital while leaving a token reserve ($0.46) for future transaction needs.
+[2025-07-30T06:05:37.335Z] 🧠 Portfolio now consists of core large-cap (CDNS), three speculative microcaps (STAI, CASK, NVNI), and a new position in ENVB (fresh biotech momentum).
+[2025-07-30T06:05:37.335Z] 🧠 Risk is now weighted toward microcap/biotech speculation, but allocations are diversified and sized to available capital. No immediate reason to sell or rotate legacy holdings unless sharp momentum reversals or losses develop.
+[2025-07-30T06:05:37.335Z] 🧠 Next steps: Monitor all high-momentum holdings (especially ENVB, IMNN if considered in future cycles) for profit-taking or stop-loss opportunities; continue to scan market news for sudden breakouts or shifts in sentiment, particularly biotech and tech.
+[2025-07-30T06:05:37.335Z] 🧠 Will revisit strategy in the next 6-hour cycle, reassessing performance and new opportunities.
+[2025-07-30T06:05:45.061Z] 🎉 Agent finished: Trade Summary & Positioning:
+
+1. Deployed remaining $77.95 into 63 shares of Enveric Biosciences (ENVB) at $1.23, capitalizing on strong biotech momentum in early premarket.
+2. Portfolio now includes:
+   - 1 share Cadence Design Systems (CDNS) — large-cap, stable growth
+   - 185 shares ScanTech AI Systems (STAI) — microcap momentum
+   - 312 shares Heritage Distilling (CASK) — microcap momentum
+   - 240 shares NVNI Group (NVNI) — microcap momentum
+   - 63 shares Enveric Biosciences (ENVB) — new high-momentum biotech
+   - $0.46 in cash as a nominal buffer
+
+3. Current rationale:
+   - No gains or losses so far (all holdings at or near cost, market stable premarket)
+   - Maintained legacy positions since there was no adverse movement or better opportunity for rotation
+   - Used new cash selectively to maximize breakout potential in the hottest premarket sector (biotech/ENVB)
+   - Exposure remains aggressive, but risk is diversified across multiple microcap momentum plays, anchored by one core large-cap
+
+4. Next Steps:
+   - Closely monitor new and existing high-volatility positions for sharp upward moves (consider profit-taking), and watch for reversal signals to mitigate downside
+   - Stay alert for major news/events, shifting swiftly if sentiment or leadership changes
+   - Re-evaluate the portfolio in the next cycle or sooner if major market-moving news develops
+
+The portfolio remains well-positioned for rapid-growth opportunities, while retaining diversification for risk control. Will reassess and adjust as the trading day evolves.
+[2025-07-30T06:05:45.063Z] 💾 Saved thread history (124 items)
+[2025-07-30T06:06:20.364Z] 💰 Current total value: $999.9999999999999
+[2025-07-30T06:06:20.364Z] 🗓 Days since first trade: 0.01
+[2025-07-30T06:06:20.364Z] ⏳ Not enough time has passed to compute CAGR accurately.
+[2025-07-30T06:06:20.369Z] 📝 Updated README with portfolio value: $1049.32
