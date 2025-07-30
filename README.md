@@ -4,21 +4,23 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 
 <!-- auto start -->
 
-## 💰 Portfolio value: $1,049.32\*\* (N/A% CAGR)
+## 💰 Portfolio value: $1,052.96** (N/A% CAGR)
 
 ### 📊 Holdings
 
-| Asset | Shares | Value   |
-| ----- | ------ | ------- |
-| Cash  | -      | $0.46   |
-| ENVB  | 63     | $77.49  |
-| CASK  | 312    | $180.96 |
-| STAI  | 185    | $220.15 |
-| CDNS  | 1      | $366.26 |
-| NVNI  | 240    | $204.00 |
+| Asset | Shares | Value |
+|-------|--------|-------|
+| Cash | - | $58.57 |
+| ENVB | 63 | $77.49 |
+| CASK | 312 | $223.98 |
+| CDNS | 1 | $365.73 |
+| NVNI | 240 | $204.00 |
+| SMCI | 2 | $123.19 |
 
 ### 📈 Recent trades
 
+- **July 30, 2025 at 2:39:36 PM**: BUY 2 SMCI @ $61.595/share ($123.19)
+- **July 30, 2025 at 2:39:15 PM**: SELL 185 STAI @ $0.98/share ($181.30)
 - **July 30, 2025 at 6:05:33 AM**: BUY 63 ENVB @ $1.23/share ($77.49)
 - **July 30, 2025 at 5:55:15 AM**: BUY 240 NVNI @ $0.6445/share ($154.68)
 - **July 30, 2025 at 5:55:13 AM**: BUY 1 CDNS @ $366.26/share ($366.26)

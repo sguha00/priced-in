@@ -1,5 +1,5 @@
 {
-  "cash": 0.46,
+  "cash": 58.57,
   "holdings": {
     "PLTR": 0,
     "TSLA": 0,
@@ -17,9 +17,10 @@
     "IMNN": 0,
     "COST": 0,
     "CASK": 312,
-    "STAI": 185,
+    "STAI": 0,
     "CDNS": 1,
-    "NVNI": 240
+    "NVNI": 240,
+    "SMCI": 2
   },
   "history": [
     {
@@ -61,6 +62,22 @@
       "shares": 63,
       "price": 1.23,
       "total": 77.49
+    },
+    {
+      "date": "2025-07-30T14:39:15.855Z",
+      "type": "sell",
+      "ticker": "STAI",
+      "shares": 185,
+      "price": 0.98,
+      "total": 181.29999999999998
+    },
+    {
+      "date": "2025-07-30T14:39:36.154Z",
+      "type": "buy",
+      "ticker": "SMCI",
+      "shares": 2,
+      "price": 61.595,
+      "total": 123.19
     }
   ]
 }
