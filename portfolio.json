@@ -1,5 +1,5 @@
 {
-  "cash": 58.57,
+  "cash": 51.09,
   "holdings": {
     "PLTR": 0,
     "TSLA": 0,
@@ -19,8 +19,9 @@
     "CASK": 312,
     "STAI": 0,
     "CDNS": 1,
-    "NVNI": 240,
-    "SMCI": 2
+    "NVNI": 0,
+    "SMCI": 2,
+    "BYD": 1
   },
   "history": [
     {
@@ -78,6 +79,22 @@
       "shares": 2,
       "price": 61.595,
       "total": 123.19
+    },
+    {
+      "date": "2025-07-30T20:07:18.537Z",
+      "type": "sell",
+      "ticker": "NVNI",
+      "shares": 240,
+      "price": 0.5026,
+      "total": 120.62400000000001
+    },
+    {
+      "date": "2025-07-30T20:07:44.526Z",
+      "type": "buy",
+      "ticker": "BYD",
+      "shares": 1,
+      "price": 128.1,
+      "total": 128.1
     }
   ]
 }
