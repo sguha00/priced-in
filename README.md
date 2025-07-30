@@ -4,18 +4,18 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 
 <!-- auto start -->
 
-## 💰 Portfolio value: $1,049.32** (N/A% CAGR)
+## 💰 Portfolio value: $1,049.32\*\* (N/A% CAGR)
 
 ### 📊 Holdings
 
-| Asset | Shares | Value |
-|-------|--------|-------|
-| Cash | - | $0.46 |
-| ENVB | 63 | $77.49 |
-| CASK | 312 | $180.96 |
-| STAI | 185 | $220.15 |
-| CDNS | 1 | $366.26 |
-| NVNI | 240 | $204.00 |
+| Asset | Shares | Value   |
+| ----- | ------ | ------- |
+| Cash  | -      | $0.46   |
+| ENVB  | 63     | $77.49  |
+| CASK  | 312    | $180.96 |
+| STAI  | 185    | $220.15 |
+| CDNS  | 1      | $366.26 |
+| NVNI  | 240    | $204.00 |
 
 ### 📈 Recent trades
 
@@ -33,11 +33,12 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 
 ## 🛠️ Installation
 
-1. Clone the repository:
+1. Clone the repository and reset the agent's thread:
 
 ```bash
 git clone https://github.com/AnandChowdhary/priced-in.git
 cd priced-in
+rm thread.json
 ```
 
 2. Install dependencies:
