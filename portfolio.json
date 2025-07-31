@@ -1,5 +1,5 @@
 {
-  "cash": 51.09,
+  "cash": 14.06,
   "holdings": {
     "PLTR": 0,
     "TSLA": 0,
@@ -16,12 +16,13 @@
     "ENVB": 63,
     "IMNN": 0,
     "COST": 0,
-    "CASK": 312,
+    "CASK": 0,
     "STAI": 0,
     "CDNS": 1,
     "NVNI": 0,
     "SMCI": 2,
-    "BYD": 1
+    "BYD": 1,
+    "SNOW": 1
   },
   "history": [
     {
@@ -95,6 +96,22 @@
       "shares": 1,
       "price": 128.1,
       "total": 128.1
+    },
+    {
+      "date": "2025-07-31T14:39:47.807Z",
+      "type": "sell",
+      "ticker": "CASK",
+      "shares": 312,
+      "price": 0.61,
+      "total": 190.32
+    },
+    {
+      "date": "2025-07-31T14:40:15.923Z",
+      "type": "buy",
+      "ticker": "SNOW",
+      "shares": 1,
+      "price": 227.35,
+      "total": 227.35
     }
   ]
 }
