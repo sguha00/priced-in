@@ -4,21 +4,23 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 
 <!-- auto start -->
 
-## 💰 Portfolio value: $835.02** (-100.00% CAGR)
+## 💰 Portfolio value: $810.32** (-100.00% CAGR)
 
 ### 📊 Holdings
 
 | Asset | Shares | Value |
 |-------|--------|-------|
-| Cash | - | $14.06 |
-| ENVB | 63 | $78.75 |
-| CDNS | 1 | $375.01 |
-| SMCI | 2 | $124.50 |
+| Cash | - | $0.26 |
+| ENVB | 63 | $76.23 |
+| CDNS | 1 | $364.12 |
+| SMCI | 2 | $117.70 |
 | BYD | 1 | $15.35 |
-| SNOW | 1 | $227.35 |
+| SNOW | 1 | $222.85 |
+| ALHC | 1 | $13.81 |
 
 ### 📈 Recent trades
 
+- **July 31, 2025 at 8:09:57 PM**: BUY 1 ALHC @ $13.805/share ($13.80)
 - **July 31, 2025 at 2:40:15 PM**: BUY 1 SNOW @ $227.35/share ($227.35)
 - **July 31, 2025 at 2:39:47 PM**: SELL 312 CASK @ $0.61/share ($190.32)
 - **July 30, 2025 at 8:07:44 PM**: BUY 1 BYD @ $128.1/share ($128.10)
@@ -28,7 +30,6 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 - **July 30, 2025 at 6:05:33 AM**: BUY 63 ENVB @ $1.23/share ($77.49)
 - **July 30, 2025 at 5:55:15 AM**: BUY 240 NVNI @ $0.6445/share ($154.68)
 - **July 30, 2025 at 5:55:13 AM**: BUY 1 CDNS @ $366.26/share ($366.26)
-- **July 30, 2025 at 5:55:13 AM**: BUY 185 STAI @ $1.19/share ($220.15)
 
 <!-- auto end -->
 

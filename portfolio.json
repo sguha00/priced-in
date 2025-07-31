@@ -1,5 +1,5 @@
 {
-  "cash": 14.06,
+  "cash": 0.26,
   "holdings": {
     "PLTR": 0,
     "TSLA": 0,
@@ -22,7 +22,8 @@
     "NVNI": 0,
     "SMCI": 2,
     "BYD": 1,
-    "SNOW": 1
+    "SNOW": 1,
+    "ALHC": 1
   },
   "history": [
     {
@@ -112,6 +113,14 @@
       "shares": 1,
       "price": 227.35,
       "total": 227.35
+    },
+    {
+      "date": "2025-07-31T20:09:57.376Z",
+      "type": "buy",
+      "ticker": "ALHC",
+      "shares": 1,
+      "price": 13.805,
+      "total": 13.805
     }
   ]
 }
