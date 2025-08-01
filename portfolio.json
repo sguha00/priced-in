@@ -1,5 +1,5 @@
 {
-  "cash": 0.26,
+  "cash": 1.43,
   "holdings": {
     "PLTR": 0,
     "TSLA": 0,
@@ -13,7 +13,7 @@
     "HEI": 0,
     "XLI": 0,
     "HLIT": 0,
-    "ENVB": 63,
+    "ENVB": 0,
     "IMNN": 0,
     "COST": 0,
     "CASK": 0,
@@ -23,7 +23,8 @@
     "SMCI": 2,
     "BYD": 1,
     "SNOW": 1,
-    "ALHC": 1
+    "ALHC": 1,
+    "DRRX": 39
   },
   "history": [
     {
@@ -121,6 +122,22 @@
       "shares": 1,
       "price": 13.805,
       "total": 13.805
+    },
+    {
+      "date": "2025-08-01T14:40:23.410Z",
+      "type": "sell",
+      "ticker": "ENVB",
+      "shares": 63,
+      "price": 1.17,
+      "total": 73.71
+    },
+    {
+      "date": "2025-08-01T14:40:28.975Z",
+      "type": "buy",
+      "ticker": "DRRX",
+      "shares": 39,
+      "price": 1.86,
+      "total": 72.54
     }
   ]
 }
