@@ -4,22 +4,26 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 
 <!-- auto start -->
 
-## 💰 Portfolio value: $857.98** (-100.00% CAGR)
+## 💰 Portfolio value: $860.66** (-99.99% CAGR)
 
 ### 📊 Holdings
 
 | Asset | Shares | Value |
 |-------|--------|-------|
-| Cash | - | $1.43 |
-| CDNS | 1 | $360.73 |
-| SMCI | 2 | $117.34 |
-| BYD | 1 | $84.06 |
-| SNOW | 1 | $208.96 |
-| ALHC | 1 | $13.31 |
-| DRRX | 39 | $72.15 |
+| Cash | - | $11.04 |
+| BB | 7 | $26.43 |
+| CDNS | 1 | $364.54 |
+| SMCI | 2 | $116.86 |
+| SNOW | 1 | $208.30 |
+| ALHC | 1 | $13.71 |
+| DRRX | 39 | $72.54 |
+| QUBT | 3 | $47.24 |
 
 ### 📈 Recent trades
 
+- **August 4, 2025 at 8:08:48 PM**: BUY 7 BB @ $3.775/share ($26.43)
+- **August 4, 2025 at 8:08:48 PM**: BUY 3 QUBT @ $15.745/share ($47.23)
+- **August 4, 2025 at 8:07:55 PM**: SELL 1 BYD @ $83.27/share ($83.27)
 - **August 1, 2025 at 2:40:28 PM**: BUY 39 DRRX @ $1.86/share ($72.54)
 - **August 1, 2025 at 2:40:23 PM**: SELL 63 ENVB @ $1.17/share ($73.71)
 - **July 31, 2025 at 8:09:57 PM**: BUY 1 ALHC @ $13.805/share ($13.80)
@@ -27,9 +31,6 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 - **July 31, 2025 at 2:39:47 PM**: SELL 312 CASK @ $0.61/share ($190.32)
 - **July 30, 2025 at 8:07:44 PM**: BUY 1 BYD @ $128.1/share ($128.10)
 - **July 30, 2025 at 8:07:18 PM**: SELL 240 NVNI @ $0.5026/share ($120.62)
-- **July 30, 2025 at 2:39:36 PM**: BUY 2 SMCI @ $61.595/share ($123.19)
-- **July 30, 2025 at 2:39:15 PM**: SELL 185 STAI @ $0.98/share ($181.30)
-- **July 30, 2025 at 6:05:33 AM**: BUY 63 ENVB @ $1.23/share ($77.49)
 
 <!-- auto end -->
 

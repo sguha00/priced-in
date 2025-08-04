@@ -1,5 +1,5 @@
 {
-  "cash": 1.43,
+  "cash": 11.04,
   "holdings": {
     "PLTR": 0,
     "TSLA": 0,
@@ -7,7 +7,7 @@
     "GOOGL": 0,
     "RIVN": 0,
     "ALT": 0,
-    "BB": 0,
+    "BB": 7,
     "NIO": 0,
     "RCL": 0,
     "HEI": 0,
@@ -21,10 +21,11 @@
     "CDNS": 1,
     "NVNI": 0,
     "SMCI": 2,
-    "BYD": 1,
+    "BYD": 0,
     "SNOW": 1,
     "ALHC": 1,
-    "DRRX": 39
+    "DRRX": 39,
+    "QUBT": 3
   },
   "history": [
     {
@@ -138,6 +139,30 @@
       "shares": 39,
       "price": 1.86,
       "total": 72.54
+    },
+    {
+      "date": "2025-08-04T20:07:55.903Z",
+      "type": "sell",
+      "ticker": "BYD",
+      "shares": 1,
+      "price": 83.27,
+      "total": 83.27
+    },
+    {
+      "date": "2025-08-04T20:08:48.094Z",
+      "type": "buy",
+      "ticker": "QUBT",
+      "shares": 3,
+      "price": 15.745,
+      "total": 47.235
+    },
+    {
+      "date": "2025-08-04T20:08:48.983Z",
+      "type": "buy",
+      "ticker": "BB",
+      "shares": 7,
+      "price": 3.775,
+      "total": 26.425
     }
   ]
 }
