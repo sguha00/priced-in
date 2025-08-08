@@ -4,7 +4,7 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 
 <!-- auto start -->
 
-## 💰 Portfolio value: $813.45** (-99.97% CAGR)
+## 💰 Portfolio value: $813.51** (-99.96% CAGR)
 
 ### 📊 Holdings
 
@@ -12,14 +12,14 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 |-------|--------|-------|
 | Cash | - | $9.28 |
 | BB | 7 | $25.31 |
-| CDNS | 1 | $354.83 |
-| SNOW | 1 | $195.00 |
-| ALHC | 1 | $14.36 |
+| CDNS | 1 | $354.86 |
+| SNOW | 1 | $195.41 |
+| ALHC | 1 | $14.42 |
 | DRRX | 39 | $72.54 |
-| QUBT | 3 | $48.69 |
+| QUBT | 3 | $48.44 |
 | BBAI | 5 | $35.15 |
-| RGTI | 2 | $30.63 |
-| APLD | 2 | $27.66 |
+| RGTI | 2 | $30.62 |
+| APLD | 2 | $27.48 |
 
 ### 📈 Recent trades
 
