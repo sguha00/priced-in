@@ -1,5 +1,5 @@
 {
-  "cash": 9.28,
+  "cash": 82.02,
   "holdings": {
     "PLTR": 0,
     "TSLA": 0,
@@ -24,7 +24,7 @@
     "BYD": 0,
     "SNOW": 1,
     "ALHC": 1,
-    "DRRX": 39,
+    "DRRX": 0,
     "QUBT": 3,
     "BBAI": 5,
     "RGTI": 2,
@@ -198,6 +198,14 @@
       "shares": 2,
       "price": 15.11,
       "total": 30.22
+    },
+    {
+      "date": "2025-08-11T15:11:40.633Z",
+      "type": "sell",
+      "ticker": "DRRX",
+      "shares": 39,
+      "price": 1.865,
+      "total": 72.735
     }
   ]
 }
