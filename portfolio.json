@@ -1,5 +1,5 @@
 {
-  "cash": 82.02,
+  "cash": 16.3,
   "holdings": {
     "PLTR": 0,
     "TSLA": 0,
@@ -25,7 +25,7 @@
     "SNOW": 1,
     "ALHC": 1,
     "DRRX": 0,
-    "QUBT": 3,
+    "QUBT": 7,
     "BBAI": 5,
     "RGTI": 2,
     "APLD": 2
@@ -206,6 +206,14 @@
       "shares": 39,
       "price": 1.865,
       "total": 72.735
+    },
+    {
+      "date": "2025-08-11T15:40:58.046Z",
+      "type": "buy",
+      "ticker": "QUBT",
+      "shares": 4,
+      "price": 16.43,
+      "total": 65.72
     }
   ]
 }
