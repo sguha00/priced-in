@@ -1,5 +1,5 @@
 {
-  "cash": 16.3,
+  "cash": 41.83,
   "holdings": {
     "PLTR": 0,
     "TSLA": 0,
@@ -26,7 +26,7 @@
     "ALHC": 1,
     "DRRX": 0,
     "QUBT": 7,
-    "BBAI": 5,
+    "BBAI": 0,
     "RGTI": 2,
     "APLD": 2
   },
@@ -214,6 +214,14 @@
       "shares": 4,
       "price": 16.43,
       "total": 65.72
+    },
+    {
+      "date": "2025-08-12T14:11:36.713Z",
+      "type": "sell",
+      "ticker": "BBAI",
+      "shares": 5,
+      "price": 5.105,
+      "total": 25.525000000000002
     }
   ]
 }
