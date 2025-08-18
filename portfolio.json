@@ -1,5 +1,5 @@
 {
-  "cash": 41.83,
+  "cash": 49.85,
   "holdings": {
     "PLTR": 0,
     "TSLA": 0,
@@ -28,7 +28,7 @@
     "QUBT": 7,
     "BBAI": 0,
     "RGTI": 2,
-    "APLD": 2
+    "APLD": 1.5
   },
   "history": [
     {
@@ -222,6 +222,14 @@
       "shares": 5,
       "price": 5.105,
       "total": 25.525000000000002
+    },
+    {
+      "date": "2025-08-18T14:47:22.809Z",
+      "type": "sell",
+      "ticker": "APLD",
+      "shares": 0.5,
+      "price": 16.03,
+      "total": 8.015
     }
   ]
 }
