@@ -4,23 +4,24 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 
 <!-- auto start -->
 
-## 💰 Portfolio value: $800.33** (-96.83% CAGR)
+## 💰 Portfolio value: $806.88** (-96.36% CAGR)
 
 ### 📊 Holdings
 
 | Asset | Shares | Value |
 |-------|--------|-------|
-| Cash | - | $72.17 |
-| BB | 7 | $25.94 |
-| CDNS | 1 | $352.08 |
-| SNOW | 1 | $198.05 |
-| ALHC | 1 | $15.87 |
-| QUBT | 6 | $90.78 |
-| RGTI | 2 | $29.14 |
-| APLD | 1 | $16.30 |
+| Cash | - | $56.59 |
+| BB | 7 | $26.39 |
+| CDNS | 1 | $352.86 |
+| SNOW | 1 | $199.06 |
+| ALHC | 1 | $15.90 |
+| QUBT | 7 | $109.69 |
+| RGTI | 2 | $29.66 |
+| APLD | 1 | $16.73 |
 
 ### 📈 Recent trades
 
+- **August 22, 2025 at 3:14:05 PM**: BUY 1 QUBT @ $15.58/share ($15.58)
 - **August 20, 2025 at 2:13:58 PM**: SELL 1 QUBT @ $13.91/share ($13.91)
 - **August 18, 2025 at 3:15:18 PM**: SELL 0.5 APLD @ $16.81/share ($8.40)
 - **August 18, 2025 at 2:47:22 PM**: SELL 0.5 APLD @ $16.03/share ($8.02)
@@ -30,7 +31,6 @@ An autonomous AI-powered stock trading agent that executes trades on GitHub Acti
 - **August 6, 2025 at 2:15:06 PM**: BUY 2 APLD @ $15.11/share ($30.22)
 - **August 6, 2025 at 2:14:54 PM**: BUY 2 RGTI @ $15.91/share ($31.82)
 - **August 6, 2025 at 2:14:53 PM**: BUY 5 BBAI @ $6.78/share ($33.90)
-- **August 6, 2025 at 2:12:52 PM**: SELL 2 SMCI @ $47.09/share ($94.18)
 
 <!-- auto end -->
 
